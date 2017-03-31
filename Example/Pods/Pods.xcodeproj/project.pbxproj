@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		207465248C671FB4809E8F4DA8F1749F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		2AB108726952099D875A2576F1CAEBD8 /* WallabagKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5A24A46C1FA48A8404CD7C39D8FEA4 /* WallabagKit-dummy.m */; };
+		2FE0607763998AC15D327FA97F85B4C5 /* Pods-WallabagKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE04743024B5BEBF5EFFC226AFA6165D /* Pods-WallabagKit_Tests-dummy.m */; };
+		3ABB4CAEE280AB3723BBDF8C83271347 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B3B61FA9EA63A588C12C2525C7B6A0 /* ReplaceMe.swift */; };
+		822ADB005CC4012762C9BF17101A240E /* WallabagKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 81E09907C2CDCE1FA6424000D10EA0ED /* WallabagKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92FC6FE7A77C3AA77EF227834D2909BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		DAE5A0C260744AB0F7A5A7C2F0AB15EA /* Pods-WallabagKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6276AD28BA6B2037DCEC819B05125877 /* Pods-WallabagKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9306FDD7D9F2A2F5D99A7FC56E48F30C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF38E8433F7724ADA605AC94096C0B66;
+			remoteInfo = WallabagKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DCE06E7F2ED52B00DF78DDADCAE7043 /* WallabagKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = WallabagKit.modulemap; sourceTree = "<group>"; };
+		0FAE7726D82E4E00CAE2E7F801EE4D5A /* WallabagKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WallabagKit-prefix.pch"; sourceTree = "<group>"; };
+		28907AE9B06CEC82E8EEDC8B488DAAC5 /* Pods-WallabagKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WallabagKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2CA0A206C1DF5E5B3C676C91FBD6E8BF /* Pods-WallabagKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WallabagKit_Tests-resources.sh"; sourceTree = "<group>"; };
+		336776D7A6F37D79FEB5BA6F7009830A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3913F3FED4BD0557EE2D17833B53E72F /* Pods-WallabagKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WallabagKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3B111831F21F6D5342295B2EBD3D29CA /* Pods-WallabagKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WallabagKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3CF6A1CAD2B38946DF18C361D976E98F /* WallabagKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WallabagKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53B8B770CD58A2CDF17C5D07095BA61E /* Pods-WallabagKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WallabagKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		6276AD28BA6B2037DCEC819B05125877 /* Pods-WallabagKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WallabagKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		7A00DF0AC4F17140128DAF69D37D0651 /* Pods-WallabagKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WallabagKit_Tests.modulemap"; sourceTree = "<group>"; };
+		81E09907C2CDCE1FA6424000D10EA0ED /* WallabagKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WallabagKit-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1C74FC1E6BD0D9A61C631BD6BD6BF02 /* WallabagKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WallabagKit.xcconfig; sourceTree = "<group>"; };
+		A414BD3A49C4B4FB6584C75EAE88CCB7 /* Pods_WallabagKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallabagKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE04743024B5BEBF5EFFC226AFA6165D /* Pods-WallabagKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WallabagKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		C5E3172100C50A6DB03D4E93C9110880 /* Pods-WallabagKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WallabagKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DB5A24A46C1FA48A8404CD7C39D8FEA4 /* WallabagKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WallabagKit-dummy.m"; sourceTree = "<group>"; };
+		F5B3B61FA9EA63A588C12C2525C7B6A0 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		F6AB2794E4227637A4302F3EAEDE97D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		691940D9D2BEEE985D7179CC39557727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				207465248C671FB4809E8F4DA8F1749F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC5A8A8E86AC8DF6F3141C8143AA9865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92FC6FE7A77C3AA77EF227834D2909BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A38C83AA71EE036F1F2AE22CD0B6680 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6AB2794E4227637A4302F3EAEDE97D1 /* Info.plist */,
+				0DCE06E7F2ED52B00DF78DDADCAE7043 /* WallabagKit.modulemap */,
+				A1C74FC1E6BD0D9A61C631BD6BD6BF02 /* WallabagKit.xcconfig */,
+				DB5A24A46C1FA48A8404CD7C39D8FEA4 /* WallabagKit-dummy.m */,
+				0FAE7726D82E4E00CAE2E7F801EE4D5A /* WallabagKit-prefix.pch */,
+				81E09907C2CDCE1FA6424000D10EA0ED /* WallabagKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WallabagKit";
+			sourceTree = "<group>";
+		};
+		4D37592B887DF86BD2A831D245B2A3FE /* Pods-WallabagKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				336776D7A6F37D79FEB5BA6F7009830A /* Info.plist */,
+				7A00DF0AC4F17140128DAF69D37D0651 /* Pods-WallabagKit_Tests.modulemap */,
+				3B111831F21F6D5342295B2EBD3D29CA /* Pods-WallabagKit_Tests-acknowledgements.markdown */,
+				3913F3FED4BD0557EE2D17833B53E72F /* Pods-WallabagKit_Tests-acknowledgements.plist */,
+				BE04743024B5BEBF5EFFC226AFA6165D /* Pods-WallabagKit_Tests-dummy.m */,
+				53B8B770CD58A2CDF17C5D07095BA61E /* Pods-WallabagKit_Tests-frameworks.sh */,
+				2CA0A206C1DF5E5B3C676C91FBD6E8BF /* Pods-WallabagKit_Tests-resources.sh */,
+				6276AD28BA6B2037DCEC819B05125877 /* Pods-WallabagKit_Tests-umbrella.h */,
+				C5E3172100C50A6DB03D4E93C9110880 /* Pods-WallabagKit_Tests.debug.xcconfig */,
+				28907AE9B06CEC82E8EEDC8B488DAAC5 /* Pods-WallabagKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-WallabagKit_Tests";
+			path = "Target Support Files/Pods-WallabagKit_Tests";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7C256C316CC6343D0D7D4ADEE1AB95ED /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D37592B887DF86BD2A831D245B2A3FE /* Pods-WallabagKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7C5F9A6DA68F8142D3C09C017AD48F88 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F5B3B61FA9EA63A588C12C2525C7B6A0 /* ReplaceMe.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				9DD736F66517E1B690C29BF7A259242A /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				C5EE807A49E58B94404E4E3571A5C79E /* Products */,
+				7C256C316CC6343D0D7D4ADEE1AB95ED /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		91FD6393ECEC9D13F667104AC3EB8E3F /* WallabagKit */ = {
+			isa = PBXGroup;
+			children = (
+				0A38C83AA71EE036F1F2AE22CD0B6680 /* Support Files */,
+				C6C5E46B1D66BDAC6BD259E8553255A1 /* WallabagKit */,
+			);
+			name = WallabagKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9DD736F66517E1B690C29BF7A259242A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91FD6393ECEC9D13F667104AC3EB8E3F /* WallabagKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5EE807A49E58B94404E4E3571A5C79E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A414BD3A49C4B4FB6584C75EAE88CCB7 /* Pods_WallabagKit_Tests.framework */,
+				3CF6A1CAD2B38946DF18C361D976E98F /* WallabagKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6C5E46B1D66BDAC6BD259E8553255A1 /* WallabagKit */ = {
+			isa = PBXGroup;
+			children = (
+				7C5F9A6DA68F8142D3C09C017AD48F88 /* Classes */,
+			);
+			path = WallabagKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		12D7116B4CF27186E0EC4B26F104A0C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822ADB005CC4012762C9BF17101A240E /* WallabagKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8694946BC05E13681EFF60E7DBA2059C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE5A0C260744AB0F7A5A7C2F0AB15EA /* Pods-WallabagKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CF38E8433F7724ADA605AC94096C0B66 /* WallabagKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35A5B24C835581DC03E68B12F092586E /* Build configuration list for PBXNativeTarget "WallabagKit" */;
+			buildPhases = (
+				9BD5003E4F5D6FFC5372DA7CF1D47CEE /* Sources */,
+				AC5A8A8E86AC8DF6F3141C8143AA9865 /* Frameworks */,
+				12D7116B4CF27186E0EC4B26F104A0C0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WallabagKit;
+			productName = WallabagKit;
+			productReference = 3CF6A1CAD2B38946DF18C361D976E98F /* WallabagKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D79D8411D3E17B1AEF6BB2F27309E432 /* Pods-WallabagKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54D174143792E49B7DC176208C2DAF34 /* Build configuration list for PBXNativeTarget "Pods-WallabagKit_Tests" */;
+			buildPhases = (
+				0BFB19190D65FA17E3483D0A8A0386A5 /* Sources */,
+				691940D9D2BEEE985D7179CC39557727 /* Frameworks */,
+				8694946BC05E13681EFF60E7DBA2059C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4EC916460D1EE2EF6FF4DC20A0A0995 /* PBXTargetDependency */,
+			);
+			name = "Pods-WallabagKit_Tests";
+			productName = "Pods-WallabagKit_Tests";
+			productReference = A414BD3A49C4B4FB6584C75EAE88CCB7 /* Pods_WallabagKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					D79D8411D3E17B1AEF6BB2F27309E432 = {
+						DevelopmentTeam = G97URPCGB8;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C5EE807A49E58B94404E4E3571A5C79E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D79D8411D3E17B1AEF6BB2F27309E432 /* Pods-WallabagKit_Tests */,
+				CF38E8433F7724ADA605AC94096C0B66 /* WallabagKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BFB19190D65FA17E3483D0A8A0386A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FE0607763998AC15D327FA97F85B4C5 /* Pods-WallabagKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD5003E4F5D6FFC5372DA7CF1D47CEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ABB4CAEE280AB3723BBDF8C83271347 /* ReplaceMe.swift in Sources */,
+				2AB108726952099D875A2576F1CAEBD8 /* WallabagKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4EC916460D1EE2EF6FF4DC20A0A0995 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WallabagKit;
+			target = CF38E8433F7724ADA605AC94096C0B66 /* WallabagKit */;
+			targetProxy = 9306FDD7D9F2A2F5D99A7FC56E48F30C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		202C0FD66FBB50F17DB26A3964DB35C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5E3172100C50A6DB03D4E93C9110880 /* Pods-WallabagKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = G97URPCGB8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WallabagKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WallabagKit_Tests/Pods-WallabagKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WallabagKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29AD0E12CB842DE8F24A8D02F198DE1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C74FC1E6BD0D9A61C631BD6BD6BF02 /* WallabagKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WallabagKit/WallabagKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WallabagKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WallabagKit/WallabagKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = WallabagKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D7BB2819825D68CAB424863EE442ABD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28907AE9B06CEC82E8EEDC8B488DAAC5 /* Pods-WallabagKit_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WallabagKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WallabagKit_Tests/Pods-WallabagKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WallabagKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F9949960AA510235486649934740E11D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C74FC1E6BD0D9A61C631BD6BD6BF02 /* WallabagKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WallabagKit/WallabagKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WallabagKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WallabagKit/WallabagKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = WallabagKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35A5B24C835581DC03E68B12F092586E /* Build configuration list for PBXNativeTarget "WallabagKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9949960AA510235486649934740E11D /* Debug */,
+				29AD0E12CB842DE8F24A8D02F198DE1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54D174143792E49B7DC176208C2DAF34 /* Build configuration list for PBXNativeTarget "Pods-WallabagKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				202C0FD66FBB50F17DB26A3964DB35C1 /* Debug */,
+				D7BB2819825D68CAB424863EE442ABD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

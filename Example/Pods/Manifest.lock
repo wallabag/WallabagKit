@@ -1,0 +1,16 @@
+PODS:
+  - WallabagKit (0.1.0)
+
+DEPENDENCIES:
+  - WallabagKit (from `../`)
+
+EXTERNAL SOURCES:
+  WallabagKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WallabagKit: 74aa96ac7eb6221f042c3b248486b9b6cf22d26a
+
+PODFILE CHECKSUM: 8fe2618e97b8b8a50693195d013b875cf95cf561
+
+COCOAPODS: 1.2.0

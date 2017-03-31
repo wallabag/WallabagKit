@@ -1,0 +1,6 @@
+framework module Pods_WallabagKit_Tests {
+  umbrella header "Pods-WallabagKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "WallabagKit",
+  "version": "0.1.0",
+  "summary": "A short description of WallabagKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Maxime/WallabagKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Maxime": "maxime.m62@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Maxime/WallabagKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "WallabagKit/Classes/**/*"
+}

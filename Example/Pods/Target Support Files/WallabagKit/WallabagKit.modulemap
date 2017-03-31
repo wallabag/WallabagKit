@@ -1,0 +1,6 @@
+framework module WallabagKit {
+  umbrella header "WallabagKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
