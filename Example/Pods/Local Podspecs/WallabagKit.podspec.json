@@ -1,9 +1,9 @@
 {
   "name": "WallabagKit",
   "version": "0.1.0",
-  "summary": "A short description of WallabagKit.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Maxime/WallabagKit",
+  "summary": "Provide Swift SDK for wallabag",
+  "description": "WallabagKit provide SDK for wallabag v2 API",
+  "homepage": "https://github.com/wallabag/WallabagKit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,17 @@
     "Maxime": "maxime.m62@gmail.com"
   },
   "source": {
-    "git": "https://github.com/Maxime/WallabagKit.git",
+    "git": "https://github.com/wallabag/WallabagKit.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/bourvill",
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "WallabagKit/Classes/**/*"
+  "source_files": "WallabagKit/Classes/*",
+  "dependencies": {
+    "Alamofire": [
+      "~> 4.0"
+    ]
+  }
 }
