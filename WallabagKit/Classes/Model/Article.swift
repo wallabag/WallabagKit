@@ -29,7 +29,7 @@ public struct Article {
     public let userId: Int
     public let userName: String
 
-    init(fromDictionary: [String: Any]) {
+    public init(fromDictionary: [String: Any]) {
 
         //@todo Failable ?
         id = fromDictionary["id"] as? Int ?? 0

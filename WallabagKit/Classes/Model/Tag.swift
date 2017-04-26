@@ -17,7 +17,7 @@ public struct Tag: Hashable {
         return id
     }
 
-    init(fromDictionary: [String: Any]) {
+    public init(fromDictionary: [String: Any]) {
         guard let id = fromDictionary["id"] as? Int,
             let label = fromDictionary["label"] as? String,
             let slug = fromDictionary["slug"] as? String else {
