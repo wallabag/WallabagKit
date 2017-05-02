@@ -1,6 +1,6 @@
 {
   "name": "WallabagKit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "Provide Swift SDK for wallabag",
   "description": "WallabagKit provide SDK for wallabag v2 API",
   "homepage": "https://github.com/wallabag/WallabagKit",
@@ -13,13 +13,13 @@
   },
   "source": {
     "git": "https://github.com/wallabag/WallabagKit.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "social_media_url": "https://twitter.com/bourvill",
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "WallabagKit/Classes/*",
+  "source_files": "WallabagKit/Classes/**/*",
   "dependencies": {
     "Alamofire": [
       "~> 4.0"

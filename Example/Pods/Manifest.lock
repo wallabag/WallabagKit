@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (4.4.0)
-  - WallabagKit (0.1.0):
+  - WallabagKit (0.1.1):
     - Alamofire (~> 4.0)
 
 DEPENDENCIES:
@@ -12,8 +12,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
-  WallabagKit: 2e2ee2ae18feb21ffcdd993112a6dce692257907
+  WallabagKit: a46bb8cb73d07b68b98ae65d45309a778ffee31c
 
-PODFILE CHECKSUM: 8fe2618e97b8b8a50693195d013b875cf95cf561
+PODFILE CHECKSUM: c2fac1acbbaba570b09611090918ad202e9610b7
 
 COCOAPODS: 1.2.0
