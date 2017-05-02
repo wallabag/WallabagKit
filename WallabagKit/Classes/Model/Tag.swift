@@ -9,9 +9,9 @@
 import Foundation
 
 public struct Tag: Hashable {
-    let id: Int
-    let label: String
-    let slug: String
+    public let id: Int
+    public let label: String
+    public let slug: String
 
     public var hashValue: Int {
         return id

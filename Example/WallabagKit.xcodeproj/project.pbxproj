@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* ExtensionTests.swift */; };
 		73C8DAE798A4895535B17FFA /* Pods_WallabagKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D11AF5ADC37252F48396C1E3 /* Pods_WallabagKit_Tests.framework */; };
+		9CC378951EB0C1C200C89619 /* ArticleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC378941EB0C1C200C89619 /* ArticleTests.swift */; };
+		9CC378971EB0C20B00C89619 /* TagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC378961EB0C20B00C89619 /* TagTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,8 +20,10 @@
 		5698DEA48AD3193C3B5291C7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* WallabagKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallabagKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		7BE8B6EDB1B453822E997709 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9CC378941EB0C1C200C89619 /* ArticleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTests.swift; sourceTree = "<group>"; };
+		9CC378961EB0C20B00C89619 /* TagTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagTests.swift; sourceTree = "<group>"; };
 		D11AF5ADC37252F48396C1E3 /* Pods_WallabagKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallabagKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -57,7 +61,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACEB1AFB9204008FA782 /* ExtensionTests.swift */,
+				9CC378981EB0C22A00C89619 /* Model */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -79,6 +84,15 @@
 				7BE8B6EDB1B453822E997709 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		9CC378981EB0C22A00C89619 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CC378961EB0C20B00C89619 /* TagTests.swift */,
+				9CC378941EB0C1C200C89619 /* ArticleTests.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		CCF26399EB3FBFC35AA52863 /* Pods */ = {
@@ -219,7 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				9CC378951EB0C1C200C89619 /* ArticleTests.swift in Sources */,
+				9CC378971EB0C20B00C89619 /* TagTests.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* ExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,8 +14,6 @@ class BearerTokenAdapter: RequestAdapter, RequestRetrier {
     private var clientID: String
     private var clientSecret: String
     private var baseURLString: String
-    private var username: String
-    private var password: String
     private var accessToken: String
     private var refreshToken: String
 
@@ -30,12 +28,10 @@ class BearerTokenAdapter: RequestAdapter, RequestRetrier {
         return SessionManager(configuration: configuration)
     }()
 
-    public init(clientID: String, clientSecret: String, username: String, password: String, baseURLString: String, accessToken: String, refreshToken: String) {
+    public init(clientID: String, clientSecret: String, baseURLString: String, accessToken: String, refreshToken: String) {
         self.clientID = clientID
         self.clientSecret = clientSecret
         self.baseURLString = baseURLString
-        self.username = username
-        self.password = password
         self.accessToken = accessToken
         self.refreshToken = refreshToken
     }
@@ -59,6 +55,8 @@ class BearerTokenAdapter: RequestAdapter, RequestRetrier {
                     strongSelf.lock.lock() ; defer { strongSelf.lock.unlock() }
 
                     if let accessToken = accessToken, let refreshToken = refreshToken {
+                        WallabagApi.set(token: accessToken)
+                        WallabagApi.set(refreshToken: refreshToken)
                         strongSelf.accessToken = accessToken
                         strongSelf.refreshToken = refreshToken
                     }
@@ -80,13 +78,10 @@ class BearerTokenAdapter: RequestAdapter, RequestRetrier {
         let urlString = "\(baseURLString)/oauth/v2/token"
 
         let parameters: [String: Any] = [
-            "access_token": accessToken,
             "refresh_token": refreshToken,
             "client_id": clientID,
             "client_secret": clientSecret,
-            "username": username,
-            "password": password,
-            "grant_type": "password"
+            "grant_type": "refresh_token"
         ]
 
         sessionManager.request(urlString, method: .post, parameters: parameters, encoding: JSONEncoding.default)

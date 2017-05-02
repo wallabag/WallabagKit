@@ -24,7 +24,6 @@
 		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195D73DD9EF275A3C56569E2B1CA8026 /* SessionDelegate.swift */; };
 		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60BC9955B4F7FFA62D7440CB385C11 /* Result.swift */; };
 		867D7313796ACB159A318D5A09F5BCE7 /* WallabagKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5A24A46C1FA48A8404CD7C39D8FEA4 /* WallabagKit-dummy.m */; };
-		9C0BD4221EA41753007634F9 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD4211EA41753007634F9 /* Server.swift */; };
 		9C0BD4241EA4178C007634F9 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD4231EA4178C007634F9 /* Article.swift */; };
 		9C0BD4261EA417DC007634F9 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD4251EA417DC007634F9 /* Tag.swift */; };
 		9C0BD4281EA4180E007634F9 /* BearerTokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0BD4271EA4180E007634F9 /* BearerTokenAdapter.swift */; };
@@ -99,7 +98,6 @@
 		8235EE194F16E21EA9943FE94A3B0491 /* WallabagApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WallabagApi.swift; sourceTree = "<group>"; };
 		87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9C0BD4211EA41753007634F9 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Server.swift; path = Model/Server.swift; sourceTree = "<group>"; };
 		9C0BD4231EA4178C007634F9 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Article.swift; path = Model/Article.swift; sourceTree = "<group>"; };
 		9C0BD4251EA417DC007634F9 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Tag.swift; path = Model/Tag.swift; sourceTree = "<group>"; };
 		9C0BD4271EA4180E007634F9 /* BearerTokenAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearerTokenAdapter.swift; sourceTree = "<group>"; };
@@ -288,7 +286,6 @@
 		9C0BD4201EA41742007634F9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9C0BD4211EA41753007634F9 /* Server.swift */,
 				9C0BD4231EA4178C007634F9 /* Article.swift */,
 				9C0BD4251EA417DC007634F9 /* Tag.swift */,
 			);
@@ -468,7 +465,6 @@
 				231C37F7D4632311F2180BD81C67B1D4 /* WallabagApi.swift in Sources */,
 				9C0BD42A1EA41839007634F9 /* Extension.swift in Sources */,
 				9C0BD4261EA417DC007634F9 /* Tag.swift in Sources */,
-				9C0BD4221EA41753007634F9 /* Server.swift in Sources */,
 				9C0BD4281EA4180E007634F9 /* BearerTokenAdapter.swift in Sources */,
 				867D7313796ACB159A318D5A09F5BCE7 /* WallabagKit-dummy.m in Sources */,
 			);
