@@ -22,7 +22,7 @@
   "source_files": "WallabagKit/Classes/**/*",
   "dependencies": {
     "Alamofire": [
-      "~> 4.0"
+
     ]
   }
 }

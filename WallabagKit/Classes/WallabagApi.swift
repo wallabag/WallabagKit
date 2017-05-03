@@ -28,10 +28,8 @@ public class WallabagApi {
         }
     }
 
-    static fileprivate let sessionManager = SessionManager()
-    static fileprivate var userStorage: UserDefaults!
-    public static var isConfigured: Bool = false
-
+    static let sessionManager = SessionManager()
+    static var userStorage: UserDefaults!
 
     public static var mode: RetrieveMode = .allArticles
 
@@ -48,8 +46,10 @@ public class WallabagApi {
         let bearer = BearerTokenAdapter(clientID: clientId, clientSecret: clientSecret, baseURLString: host, accessToken: accessToken, refreshToken: refreshToken)
         sessionManager.adapter = bearer
         sessionManager.retrier = bearer
+    }
 
-        isConfigured = true
+    public static func isConfigured() -> Bool {
+        return getHost() != nil && getClientId() != nil && getClientSecret() != nil && getToken() != nil && getRefreshToken() != nil
     }
 
     public static func configure(host: String) {
