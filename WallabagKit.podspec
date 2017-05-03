@@ -28,7 +28,7 @@ WallabagKit provide SDK for wallabag v2 API
   s.source           = { :git => 'https://github.com/wallabag/WallabagKit.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/bourvill'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'WallabagKit/Classes/**/*'
   
