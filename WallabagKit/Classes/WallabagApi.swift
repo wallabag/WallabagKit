@@ -174,9 +174,8 @@ public class WallabagApi {
                 completion(articles, nil)
                 break
             case .failure(let error):
-                completion(articles, "Erroor")
+                completion(articles, error.localizedDescription)
             }
-
         }
     }
 
