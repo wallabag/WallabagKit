@@ -8,7 +8,7 @@ import Alamofire
 
 public class WallabagApi {
 
-    public enum RetrieveMode: String {
+    /*public enum RetrieveMode: String {
         case allArticles
         case archivedArticles
         case unarchivedArticles
@@ -26,12 +26,12 @@ public class WallabagApi {
                 return "Unread articles"
             }
         }
-    }
+    }*/
 
     static let sessionManager = SessionManager()
     static var userStorage: UserDefaults!
 
-    public static var mode: RetrieveMode = .allArticles
+    //public static var mode: RetrieveMode = .allArticles
 
     public static func `init`(userStorage: UserDefaults) {
         self.userStorage = userStorage
@@ -46,47 +46,6 @@ public class WallabagApi {
         let bearer = BearerTokenAdapter(clientID: clientId, clientSecret: clientSecret, baseURLString: host, accessToken: accessToken, refreshToken: refreshToken)
         sessionManager.adapter = bearer
         sessionManager.retrier = bearer
-    }
-
-    public static func isConfigured() -> Bool {
-        return getHost() != nil && getClientId() != nil && getClientSecret() != nil && getToken() != nil && getRefreshToken() != nil
-    }
-
-    public static func configure(host: String) {
-        userStorage.set(host, forKey: "host")
-    }
-
-    public static func configure(clientId: String, clientSecret: String) {
-        userStorage.set(clientId, forKey: "clientId")
-        userStorage.set(clientSecret, forKey: "clientSecret")
-    }
-
-    public static func set(token: String) {
-        userStorage.set(token, forKey: "token")
-    }
-
-    public static func set(refreshToken: String) {
-        userStorage.set(refreshToken, forKey: "refreshToken")
-    }
-
-    public static func getHost() -> String? {
-        return userStorage.string(forKey: "host")
-    }
-
-    public static func getClientId() -> String? {
-        return userStorage.string(forKey: "clientId")
-    }
-
-    public static func getClientSecret() -> String? {
-        return userStorage.string(forKey: "clientSecret")
-    }
-
-    public static func getToken() -> String? {
-        return userStorage.string(forKey: "token")
-    }
-
-    public static func getRefreshToken() -> String? {
-        return userStorage.string(forKey: "refreshToken")
     }
 
     public static func requestToken(username: String, password: String, _ completion: @escaping(_ success: Bool, _ error: String?) -> Void) {
@@ -132,8 +91,8 @@ public class WallabagApi {
     }
 
     // MARK: - Article
-    public static func patchArticle(_ article: Article, withParamaters withParameters: [String: Any], completion: @escaping(_ article: Article) -> Void) {
-        sessionManager.request(getHost()! + "/api/entries/" + String(article.id), method: .patch, parameters: withParameters)
+    public static func patchArticle(_ id: Int, withParamaters withParameters: [String: Any], completion: @escaping(_ article: Article) -> Void) {
+        sessionManager.request(getHost()! + "/api/entries/" + String(id), method: .patch, parameters: withParameters)
             .validate()
             .responseJSON { response in
                 if let JSON = response.result.value as? [String: Any] {
@@ -142,8 +101,8 @@ public class WallabagApi {
         }
     }
 
-    public static func deleteArticle(_ article: Article, completion: @escaping() -> Void) {
-        sessionManager.request(getHost()! + "/api/entries/" + String(article.id), method: .delete).validate().responseJSON { _ in
+    public static func deleteArticle(_ id: Int, completion: @escaping() -> Void) {
+        sessionManager.request(getHost()! + "/api/entries/" + String(id), method: .delete).validate().responseJSON { _ in
             completion()
         }
     }
@@ -157,8 +116,8 @@ public class WallabagApi {
     }
 
     public static func retrieveArticle(page: Int = 1, withParameters: [String: Any] = [:], _ completion: @escaping([Article], _ error: String?) -> Void) {
-        var parameters: [String: Any] = ["perPage": 20, "page": page]
-        parameters = parameters.merge(dict: withParameters).merge(dict: getRetrieveMode())
+        var parameters: [String: Any] = ["page": page]
+        parameters = parameters.merge(dict: withParameters)
         var articles = [Article]()
 
         sessionManager.request(getHost()! + "/api/entries", parameters: parameters).validate().responseJSON { response in
@@ -173,8 +132,8 @@ public class WallabagApi {
                 }
                 completion(articles, nil)
                 break
-            case .failure(let error):
-                completion(articles, "Erroor")
+            case .failure( _):
+                completion(articles, "Error")
             }
 
         }
@@ -198,7 +157,7 @@ public class WallabagApi {
         }
     }
 
-    public static func getRetrieveMode() -> [String: Any] {
+    /*public static func getRetrieveMode() -> [String: Any] {
         switch mode {
         case .allArticles:
             return [:]
@@ -209,5 +168,5 @@ public class WallabagApi {
         case .starredArticles:
             return ["starred": 1]
         }
-    }
+    }*/
 }

@@ -28,6 +28,8 @@
 		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60BC9955B4F7FFA62D7440CB385C11 /* Result.swift */; };
 		9BD4574571ACC0D1230BC63BD2975DD0 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9B6EEE70AA24A404C5EB26114651AE /* Tag.swift */; };
 		9BDEDA50D5BB376B9BDB460833B0CEBB /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F73AE9B39C4BF437A112CE9A83F470 /* Extension.swift */; };
+		9CC13B021EC1E28700017F2F /* WallabagApi+Wrapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC13B011EC1E28700017F2F /* WallabagApi+Wrapped.swift */; };
+		9CE9CF4C1EC068510010384B /* WallabagApi+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE9CF4A1EC067AF0010384B /* WallabagApi+Configuration.swift */; };
 		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */; };
 		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */; };
 		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C1C119BCE81C53F76CAC2BE27C38E0 /* Alamofire-dummy.m */; };
@@ -69,10 +71,10 @@
 		04F47F5C9CDB035C5AFADEBA5BF44F1C /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		06F73AE9B39C4BF437A112CE9A83F470 /* Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		0D0533E4EC2277AAAC8888328EC5A64B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		0DCE06E7F2ED52B00DF78DDADCAE7043 /* WallabagKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WallabagKit.modulemap; sourceTree = "<group>"; };
+		0DCE06E7F2ED52B00DF78DDADCAE7043 /* WallabagKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = WallabagKit.modulemap; sourceTree = "<group>"; };
 		0FAE7726D82E4E00CAE2E7F801EE4D5A /* WallabagKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WallabagKit-prefix.pch"; sourceTree = "<group>"; };
 		0FCBF1EED873F61C6D46CE37FA5C39D3 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		1011322FBE76932D514DED5BC3D79D08 /* Pods_WallabagKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WallabagKit_Tests.framework; path = "Pods-WallabagKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1011322FBE76932D514DED5BC3D79D08 /* Pods_WallabagKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallabagKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A0A663B36A229C69D5274A83E93F88 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		155538D91ACEEEDF82069ACF6C1A02E7 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		195D73DD9EF275A3C56569E2B1CA8026 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
@@ -86,7 +88,7 @@
 		3958FA1EB2A5428FFAD37DD0D476E8DD /* BearerTokenAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BearerTokenAdapter.swift; sourceTree = "<group>"; };
 		3B111831F21F6D5342295B2EBD3D29CA /* Pods-WallabagKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WallabagKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3D60BC9955B4F7FFA62D7440CB385C11 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
-		3EC40D577F2156661E37C2BC1A721D2A /* WallabagKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WallabagKit.framework; path = WallabagKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EC40D577F2156661E37C2BC1A721D2A /* WallabagKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WallabagKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46CDAC6C1187C5467E576980E1062C8B /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		4AF006B0AD5765D1BFA8253C2DCBB126 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		4E9B6EEE70AA24A404C5EB26114651AE /* Tag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
@@ -95,12 +97,14 @@
 		6639346628280A0D0FAD35196BF56108 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		66A46F517F0AF7E85A16D723F6406896 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		706C7AFFE37BA158C3553250F4B5FAED /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A00DF0AC4F17140128DAF69D37D0651 /* Pods-WallabagKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-WallabagKit_Tests.modulemap"; sourceTree = "<group>"; };
-		7D141D1953E5C6E67E362CE73090E48A /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		7A00DF0AC4F17140128DAF69D37D0651 /* Pods-WallabagKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WallabagKit_Tests.modulemap"; sourceTree = "<group>"; };
+		7D141D1953E5C6E67E362CE73090E48A /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		81E09907C2CDCE1FA6424000D10EA0ED /* WallabagKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WallabagKit-umbrella.h"; sourceTree = "<group>"; };
 		87882A1F5A92C8138D54545E51D51E6F /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		994DF63BB5804E5F0DE4D6821AC0E357 /* Article.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		9CC13B011EC1E28700017F2F /* WallabagApi+Wrapped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WallabagApi+Wrapped.swift"; sourceTree = "<group>"; };
+		9CE9CF4A1EC067AF0010384B /* WallabagApi+Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WallabagApi+Configuration.swift"; sourceTree = "<group>"; };
 		A01C037B4034EDA3D7955BC5E4E9D9D6 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
 		A1C74FC1E6BD0D9A61C631BD6BD6BF02 /* WallabagKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WallabagKit.xcconfig; sourceTree = "<group>"; };
 		AB82BA15C1DE101D4CD3A594AF686A35 /* WallabagApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WallabagApi.swift; sourceTree = "<group>"; };
@@ -115,7 +119,7 @@
 		E5A8AA5F9EDED0A0BDDE7E830BF4AEE0 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		E6F34CCF86067ED508C12C676E298C69 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		F6AB2794E4227637A4302F3EAEDE97D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F919A4DCE888A24AD3F20ED45934D610 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F919A4DCE888A24AD3F20ED45934D610 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,9 +171,10 @@
 				3958FA1EB2A5428FFAD37DD0D476E8DD /* BearerTokenAdapter.swift */,
 				06F73AE9B39C4BF437A112CE9A83F470 /* Extension.swift */,
 				AB82BA15C1DE101D4CD3A594AF686A35 /* WallabagApi.swift */,
+				9CC13B011EC1E28700017F2F /* WallabagApi+Wrapped.swift */,
+				9CE9CF4A1EC067AF0010384B /* WallabagApi+Configuration.swift */,
 				26AB78AF7C58207203992F66D97E2181 /* Model */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -195,7 +200,6 @@
 				B029DBC43E49A740F12B5E4D2E6DD452 /* Validation.swift */,
 				55F14F994FE7AB51F028BFE66CEF3106 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -205,7 +209,6 @@
 				994DF63BB5804E5F0DE4D6821AC0E357 /* Article.swift */,
 				4E9B6EEE70AA24A404C5EB26114651AE /* Tag.swift */,
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -214,7 +217,6 @@
 			children = (
 				0C1CEDC986A6E815B105D5924B255381 /* Classes */,
 			);
-			name = WallabagKit;
 			path = WallabagKit;
 			sourceTree = "<group>";
 		};
@@ -441,11 +443,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6582869B55FDFB39774233EAFB5218E6 /* Article.swift in Sources */,
+				9CE9CF4C1EC068510010384B /* WallabagApi+Configuration.swift in Sources */,
 				1D98993F7F292EB9FA7543F4F8FD649B /* BearerTokenAdapter.swift in Sources */,
 				9BDEDA50D5BB376B9BDB460833B0CEBB /* Extension.swift in Sources */,
 				9BD4574571ACC0D1230BC63BD2975DD0 /* Tag.swift in Sources */,
 				38FDBC9BD6BB01486C747CC3030FE0E2 /* WallabagApi.swift in Sources */,
 				77DBF0C50590D4EFACDF13C6815470CE /* WallabagKit-dummy.m in Sources */,
+				9CC13B021EC1E28700017F2F /* WallabagApi+Wrapped.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
