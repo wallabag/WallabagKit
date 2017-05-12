@@ -1,6 +1,6 @@
 # WallabagKit
 
-[![CI Status](http://img.shields.io/travis/Maxime/WallabagKit.svg?style=flat)](https://travis-ci.org/Maxime/WallabagKit)
+[![CI Status](http://img.shields.io/travis/wallabag/WallabagKit.svg?style=flat)](https://travis-ci.org/Maxime/WallabagKit)
 [![Version](https://img.shields.io/cocoapods/v/WallabagKit.svg?style=flat)](http://cocoapods.org/pods/WallabagKit)
 [![License](https://img.shields.io/cocoapods/l/WallabagKit.svg?style=flat)](http://cocoapods.org/pods/WallabagKit)
 [![Platform](https://img.shields.io/cocoapods/p/WallabagKit.svg?style=flat)](http://cocoapods.org/pods/WallabagKit)
