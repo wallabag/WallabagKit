@@ -6,32 +6,156 @@
 import Foundation
 import Alamofire
 
-public class WallabagApi {
+/// Types that conform to this model an API endpoint that can be connected to via Alamofire
+protocol AlamofireEndPoint {
+    /// Provides all the information required to make the API call from Alamofire
+    func provideValues()-> (url: String, httpMethod: HTTPMethod, parameters:[String:Any]?,encoding: ParameterEncoding)
 
-    /*public enum RetrieveMode: String {
-        case allArticles
-        case archivedArticles
-        case unarchivedArticles
-        case starredArticles
+    var url: URLConvertible         { get }
+    var httpMethod: HTTPMethod      { get }
+    var parameters: [String: Any]?  { get }
+    var encoding: ParameterEncoding { get }
+}
 
-        public func humainReadable() -> String {
-            switch self {
-            case .allArticles:
-                return "All articles"
-            case .archivedArticles:
-                return "Read articles"
-            case .starredArticles:
-                return "Starred articles"
-            case .unarchivedArticles:
-                return "Unread articles"
+extension AlamofireEndPoint {
+    var url: URLConvertible         { return provideValues().url }
+    var httpMethod: HTTPMethod      { return provideValues().httpMethod }
+    var parameters: [String: Any]?  { return provideValues().parameters }
+    var encoding: ParameterEncoding { return provideValues().encoding }
+}
+
+/// The response from a method that can result in either a successful or failed state
+public enum Result<T> {
+    case success(T)
+    case failure(Error)
+}
+
+/// The Reponse type from Alamofire is Any
+typealias AlamofireJSONCompletionHandler = (Result<Any>)->()
+
+/// Used to connect to any JSON API that is modeled by an AlamofireEndpoint
+public enum AlamoFireJSONClient {
+
+    static func makeAPICall(to endPoint: AlamofireEndPoint, completionHandler:@escaping AlamofireJSONCompletionHandler) {
+        Alamofire.request(endPoint.url, method: endPoint.httpMethod, parameters: endPoint.parameters, encoding: endPoint.encoding).validate().responseJSON { (response) in
+            switch response.result {
+            case .success(let value):
+                completionHandler(Result.success(value))
+            case .failure(let error):
+                completionHandler(Result.failure(error))
             }
         }
-    }*/
+    }
+}
+
+
+/// All of the endpoints return a [String : Any] json object
+public typealias WallabagJSONCompletionHandler = (Result<[String : Any]>)->()
+
+
+/// Types that conform to this can return results from the JSON API
+protocol WallabagJSONClient {
+    static func handle(result: Result<Any>, completionHandler: WallabagJSONCompletionHandler)
+    static func handleSuccessfulAPICall(for json: Any, completionHandler: WallabagJSONCompletionHandler)
+    static func handleFailedAPICall(for error: Error, completionHandler: WallabagJSONCompletionHandler)
+}
+
+extension WallabagJSONClient {
+
+    static func handle(result: Result<Any>, completionHandler: WallabagJSONCompletionHandler) {
+        switch result {
+        case .success(let json):
+            self.handleSuccessfulAPICall(for: json, completionHandler: completionHandler)
+        case .failure(let error):
+            self.handleFailedAPICall(for: error, completionHandler: completionHandler)
+        }
+    }
+
+    static func handleSuccessfulAPICall(for json: Any, completionHandler: WallabagJSONCompletionHandler) {
+        guard let json = json as? [String : Any] else {
+          //  let error = NetworkingError.badJSON
+           // handleFailedAPICall(for: error, completionHandler: completionHandler)
+            return
+        }
+        completionHandler(Result.success(json))
+    }
+
+    static func handleFailedAPICall(for error: Error, completionHandler: WallabagJSONCompletionHandler) {
+        completionHandler(Result.failure(error))
+    }
+}
+
+
+
+
+public class WallabagApi {
 
     static let sessionManager = SessionManager()
     static var userStorage: UserDefaults!
 
-    //public static var mode: RetrieveMode = .allArticles
+    enum EntryEndPoint: AlamofireEndPoint {
+
+        case delete(id: Int)
+        case add(url: URL)
+        case fetchEntry(id: Int)
+        case fetch(parameters: [String: Any])
+        case update(id: Int, parameters: [String: Any])
+
+        func provideValues() -> (url: String, httpMethod: HTTPMethod, parameters: [String : Any]?, encoding: ParameterEncoding) {
+            switch self {
+            case .fetchEntry(let id):
+                return (url: "\(WallabagApi.getHost()!)/api/entries/\(String(id))", httpMethod: .get, parameters: nil, encoding: URLEncoding.default)
+            case .fetch(let parameters):
+                return (url: "\(WallabagApi.getHost()!)/api/entries", httpMethod: .get, parameters: parameters, encoding: URLEncoding.default)
+            case .delete(let id):
+                return (url: "\(WallabagApi.getHost()!)/api/entries/\(String(id))", httpMethod: .delete, parameters: nil, encoding: URLEncoding.default)
+            case .add(let url):
+                return (url: "\(WallabagApi.getHost()!)/api/entries", httpMethod: .post, parameters: ["url": url.absoluteString], encoding: URLEncoding.default)
+            case .update(let id, let parameters):
+                return (url: "\(WallabagApi.getHost()!)/api/entries/\(String(id))", httpMethod: .patch, parameters: parameters, encoding: URLEncoding.default)
+            }
+        }
+    }
+
+    public enum Entry: WallabagJSONClient {
+        public static func delete(id: Int, _ completionHandler: @escaping WallabagJSONCompletionHandler) {
+            WallabagApi.makeAPICall(to: EntryEndPoint.delete(id: id)) { (result) in
+                self.handle(result: result, completionHandler: completionHandler)
+            }
+        }
+        public static func add(url: URL, _ completionHandler: @escaping WallabagJSONCompletionHandler) {
+            WallabagApi.makeAPICall(to: EntryEndPoint.add(url: url)) { (result) in
+                self.handle(result: result, completionHandler: completionHandler)
+            }
+        }
+        public static func fetchEntry(id: Int, _ completionHandler: @escaping WallabagJSONCompletionHandler) {
+            WallabagApi.makeAPICall(to: EntryEndPoint.fetchEntry(id: id)) { (result) in
+                self.handle(result: result, completionHandler: completionHandler)
+            }
+        }
+        public static func fetch(with parameters: [String: Any], _ completionHandler: @escaping WallabagJSONCompletionHandler) {
+            WallabagApi.makeAPICall(to: EntryEndPoint.fetch(parameters: parameters)) { (result) in
+                self.handle(result: result, completionHandler: completionHandler)
+            }
+        }
+        public static func update(id: Int, with parameters: [String: Any], _ completionHandler: @escaping WallabagJSONCompletionHandler) {
+            WallabagApi.makeAPICall(to: EntryEndPoint.update(id: id, parameters: parameters)) { (result) in
+                self.handle(result: result, completionHandler: completionHandler)
+            }
+        }
+    }
+
+    static func makeAPICall(to endPoint: AlamofireEndPoint, completionHandler:@escaping AlamofireJSONCompletionHandler) {
+        sessionManager.request(endPoint.url, method: endPoint.httpMethod, parameters: endPoint.parameters, encoding: endPoint.encoding).validate().responseJSON { (response) in
+            switch response.result {
+            case .success(let value):
+                completionHandler(Result.success(value))
+            case .failure(let error):
+                completionHandler(Result.failure(error))
+            }
+        }
+    }
+
 
     public static func `init`(userStorage: UserDefaults) {
         self.userStorage = userStorage
@@ -156,17 +280,4 @@ public class WallabagApi {
             completion(total)
         }
     }
-
-    /*public static func getRetrieveMode() -> [String: Any] {
-        switch mode {
-        case .allArticles:
-            return [:]
-        case .archivedArticles:
-            return ["archive": 1]
-        case .unarchivedArticles:
-            return ["archive": 0]
-        case .starredArticles:
-            return ["starred": 1]
-        }
-    }*/
 }
