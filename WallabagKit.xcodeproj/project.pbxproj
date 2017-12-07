@@ -24,13 +24,13 @@
 		092BFA621FD6CF08006D471D /* BearerTokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092BFA601FD6CEF2006D471D /* BearerTokenAdapter.swift */; };
 		OBJ_46 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_52 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Package.swift */; };
-		OBJ_58 /* WallabagAuthApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* WallabagAuthApiTests.swift */; };
+		OBJ_58 /* WallabagSessionManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* WallabagSessionManagerTests.swift */; };
 		OBJ_59 /* WallabagKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* WallabagKitTests.swift */; };
 		OBJ_61 /* WallabagKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "WallabagKit::WallabagKit::Product" /* WallabagKit.framework */; };
 		OBJ_62 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
 		OBJ_71 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* URLSessionProtocol.swift */; };
 		OBJ_72 /* WallabagApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* WallabagApi.swift */; };
-		OBJ_73 /* WallabagAuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* WallabagAuthApi.swift */; };
+		OBJ_73 /* WallabagSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* WallabagSessionManager.swift */; };
 		OBJ_74 /* WallabagKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* WallabagKit.swift */; };
 		OBJ_76 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
 		OBJ_82 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* AFError.swift */; };
@@ -86,9 +86,9 @@
 /* Begin PBXFileReference section */
 		092BFA601FD6CEF2006D471D /* BearerTokenAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearerTokenAdapter.swift; sourceTree = "<group>"; };
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* WallabagAuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabagAuthApi.swift; sourceTree = "<group>"; };
+		OBJ_10 /* WallabagSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabagSessionManager.swift; sourceTree = "<group>"; };
 		OBJ_11 /* WallabagKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabagKit.swift; sourceTree = "<group>"; };
-		OBJ_14 /* WallabagAuthApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabagAuthApiTests.swift; sourceTree = "<group>"; };
+		OBJ_14 /* WallabagSessionManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabagSessionManagerTests.swift; sourceTree = "<group>"; };
 		OBJ_15 /* WallabagKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabagKitTests.swift; sourceTree = "<group>"; };
 		OBJ_16 /* Configs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Configs; sourceTree = SOURCE_ROOT; };
 		OBJ_19 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Volumes/doc/project/WallabagKit/.build/checkouts/Alamofire.git-6801331143877184500/Package.swift"; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 		OBJ_13 /* WallabagKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_14 /* WallabagAuthApiTests.swift */,
+				OBJ_14 /* WallabagSessionManagerTests.swift */,
 				OBJ_15 /* WallabagKitTests.swift */,
 			);
 			name = WallabagKitTests;
@@ -206,7 +206,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -216,7 +216,6 @@
 				OBJ_17 /* Dependencies */,
 				OBJ_37 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -224,7 +223,7 @@
 			children = (
 				OBJ_8 /* URLSessionProtocol.swift */,
 				OBJ_9 /* WallabagApi.swift */,
-				OBJ_10 /* WallabagAuthApi.swift */,
+				OBJ_10 /* WallabagSessionManager.swift */,
 				OBJ_11 /* WallabagKit.swift */,
 				092BFA601FD6CEF2006D471D /* BearerTokenAdapter.swift */,
 			);
@@ -333,7 +332,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_37 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -369,7 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_58 /* WallabagAuthApiTests.swift in Sources */,
+				OBJ_58 /* WallabagSessionManagerTests.swift in Sources */,
 				OBJ_59 /* WallabagKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,7 +379,7 @@
 			files = (
 				OBJ_71 /* URLSessionProtocol.swift in Sources */,
 				OBJ_72 /* WallabagApi.swift in Sources */,
-				OBJ_73 /* WallabagAuthApi.swift in Sources */,
+				OBJ_73 /* WallabagSessionManager.swift in Sources */,
 				092BFA621FD6CF08006D471D /* BearerTokenAdapter.swift in Sources */,
 				OBJ_74 /* WallabagKit.swift in Sources */,
 			);

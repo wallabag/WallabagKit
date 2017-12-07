@@ -16,8 +16,8 @@ class WallabagKitTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         //// XCTAssertEqual(WallabagKit().text, "Hello, World!")
     }
-    
+
     static var allTests = [
-        ("testExample", testExample),
+        ("testExample", testExample)
     ]
 }

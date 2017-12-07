@@ -11,29 +11,16 @@ import Alamofire
 
 public class WallabagApi {
 
-    let auth: WallabagAuthApi
+    let auth: WallabagSessionManager
     let sessionManager: SessionManager
 
-    public init(auth: WallabagAuthApi) {
+    public init(auth: WallabagSessionManager) {
         self.auth = auth
         self.sessionManager = auth.createSession()
     }
-    
-    /*
-    public init(host: String, clientId: String, clientSecret: String, urlSession: URLSessionProtocol) {
-        self.host = host
-        self.clientId = clientId
-        self.clientSecret = clientSecret
-    }
-
-    public convenience init(host: String, clientId: String, clientSecret: String) {
-        self.init(host: host, clientId: clientId, clientSecret: clientSecret)
-    }
-
- */
 
     public func entry(completion: @escaping () -> Void) {
-        sessionManager.request(auth.host + "/api/entries", parameters: [:]).validate().responseJSON { response in
+        sessionManager.request(auth.host + "/api/entries", parameters: [:]).validate().responseJSON { _ in
 
             completion()
             /*switch response.result {
@@ -54,4 +41,3 @@ public class WallabagApi {
         }
     }
 }
-

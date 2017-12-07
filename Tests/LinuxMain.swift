@@ -2,5 +2,5 @@ import XCTest
 @testable import WallabagKitTests
 
 XCTMain([
-    testCase(WallabagKitTests.allTests),
+    testCase(WallabagKitTests.allTests)
 ])
