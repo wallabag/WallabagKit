@@ -74,13 +74,8 @@ class BearerTokenAdapter: RequestAdapter, RequestRetrier {
 
     private func refreshTokens(completion: @escaping RefreshCompletion) {
         guard !isRefreshing else { return }
-
         isRefreshing = true
-
-        let urlString = "\(baseURLString)/oauth/v2/token"
-
         var parameters: Parameters = [:]
-
         if let refreshToken = refreshToken {
             parameters = [
             "refresh_token": refreshToken,
@@ -97,8 +92,8 @@ class BearerTokenAdapter: RequestAdapter, RequestRetrier {
                 "password": password
             ]
         }
-
-        sessionManager.request(urlString, method: .post, parameters: parameters, encoding: JSONEncoding.default)
+        
+        sessionManager.request("\(baseURLString)/oauth/v2/token", method: .post, parameters: parameters, encoding: JSONEncoding.default)
             .responseJSON { [weak self] response in
                 guard let strongSelf = self else { return }
                 if

@@ -22,16 +22,12 @@
 
 /* Begin PBXBuildFile section */
 		092BFA621FD6CF08006D471D /* BearerTokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092BFA601FD6CEF2006D471D /* BearerTokenAdapter.swift */; };
+		0968B1951FDB4A2100D61E48 /* WallabagEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0968B1941FDB4A2100D61E48 /* WallabagEntry.swift */; };
 		OBJ_46 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_52 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Package.swift */; };
-		OBJ_58 /* WallabagSessionManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* WallabagSessionManagerTests.swift */; };
-		OBJ_59 /* WallabagKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* WallabagKitTests.swift */; };
 		OBJ_61 /* WallabagKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "WallabagKit::WallabagKit::Product" /* WallabagKit.framework */; };
 		OBJ_62 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
-		OBJ_71 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* URLSessionProtocol.swift */; };
 		OBJ_72 /* WallabagApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* WallabagApi.swift */; };
-		OBJ_73 /* WallabagSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* WallabagSessionManager.swift */; };
-		OBJ_74 /* WallabagKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* WallabagKit.swift */; };
 		OBJ_76 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
 		OBJ_82 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* AFError.swift */; };
 		OBJ_83 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Alamofire.swift */; };
@@ -85,11 +81,8 @@
 
 /* Begin PBXFileReference section */
 		092BFA601FD6CEF2006D471D /* BearerTokenAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearerTokenAdapter.swift; sourceTree = "<group>"; };
+		0968B1941FDB4A2100D61E48 /* WallabagEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WallabagEntry.swift; path = Sources/WallabagEntry.swift; sourceTree = SOURCE_ROOT; };
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* WallabagSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabagSessionManager.swift; sourceTree = "<group>"; };
-		OBJ_11 /* WallabagKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabagKit.swift; sourceTree = "<group>"; };
-		OBJ_14 /* WallabagSessionManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabagSessionManagerTests.swift; sourceTree = "<group>"; };
-		OBJ_15 /* WallabagKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabagKitTests.swift; sourceTree = "<group>"; };
 		OBJ_16 /* Configs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Configs; sourceTree = SOURCE_ROOT; };
 		OBJ_19 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Volumes/doc/project/WallabagKit/.build/checkouts/Alamofire.git-6801331143877184500/Package.swift"; sourceTree = "<group>"; };
 		OBJ_20 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
@@ -110,10 +103,9 @@
 		OBJ_35 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		OBJ_36 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_8 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		OBJ_9 /* WallabagApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallabagApi.swift; sourceTree = "<group>"; };
 		"WallabagKit::WallabagKit::Product" /* WallabagKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WallabagKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"WallabagKit::WallabagKitTests::Product" /* WallabagKitTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = WallabagKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"WallabagKit::WallabagKitTests::Product" /* WallabagKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = WallabagKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +136,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0968B1931FDB47EB00D61E48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0968B1941FDB4A2100D61E48 /* WallabagEntry.swift */,
+			);
+			path = Model;
+			sourceTree = SOURCE_ROOT;
+		};
 		OBJ_12 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,8 +155,6 @@
 		OBJ_13 /* WallabagKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_14 /* WallabagSessionManagerTests.swift */,
-				OBJ_15 /* WallabagKitTests.swift */,
 			);
 			name = WallabagKitTests;
 			path = Tests/WallabagKitTests;
@@ -221,10 +219,8 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* URLSessionProtocol.swift */,
+				0968B1931FDB47EB00D61E48 /* Model */,
 				OBJ_9 /* WallabagApi.swift */,
-				OBJ_10 /* WallabagSessionManager.swift */,
-				OBJ_11 /* WallabagKit.swift */,
 				092BFA601FD6CEF2006D471D /* BearerTokenAdapter.swift */,
 			);
 			path = Sources;
@@ -318,7 +314,7 @@
 		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 9999;
+				LastUpgradeCheck = 0920;
 				TargetAttributes = {
 					"Alamofire::Alamofire" = {
 						LastSwiftMigration = 0910;
@@ -368,8 +364,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_58 /* WallabagSessionManagerTests.swift in Sources */,
-				OBJ_59 /* WallabagKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,11 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_71 /* URLSessionProtocol.swift in Sources */,
+				0968B1951FDB4A2100D61E48 /* WallabagEntry.swift in Sources */,
 				OBJ_72 /* WallabagApi.swift in Sources */,
-				OBJ_73 /* WallabagSessionManager.swift in Sources */,
 				092BFA621FD6CF08006D471D /* BearerTokenAdapter.swift in Sources */,
-				OBJ_74 /* WallabagKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,12 +443,36 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-DXcode";
@@ -473,11 +489,34 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -528,7 +567,7 @@
 		OBJ_55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -546,7 +585,7 @@
 		OBJ_56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
