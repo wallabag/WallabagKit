@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import XCTest
 import WallabagKit
+import XCTest
 
 class WallabagKitTests: XCTestCase {
     func testExample() {
@@ -16,7 +16,7 @@ class WallabagKitTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         //// XCTAssertEqual(WallabagKit().text, "Hello, World!")
     }
-    
+
     static var allTests = [
         ("testExample", testExample),
     ]

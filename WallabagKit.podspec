@@ -16,4 +16,5 @@ Pod::Spec.new do |s|
   s.source       = { :git => "git@github.com:wallabag/wallabagKit.git", :tag => s.version.to_s }
   s.source_files  = "Sources/**/*"
   s.frameworks  = "Foundation"
+  s.dependency 'Alamofire'
 end
