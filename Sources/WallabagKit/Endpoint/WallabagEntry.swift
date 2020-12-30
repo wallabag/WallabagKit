@@ -14,6 +14,7 @@ public enum WallabagEntryEndpoint: WallabagKitEndpoint {
     case delete(id: Int)
     case deleteTag(tagId: Int, entry: Int)
     case update(id: Int, parameters: WallabagKit.Parameters)
+    case reload(id: Int)
 
     public func method() -> HttpMethod {
         switch self {
@@ -24,6 +25,8 @@ public enum WallabagEntryEndpoint: WallabagKitEndpoint {
         case .delete, .deleteTag:
             return .delete
         case .update:
+            return .patch
+        case .reload:
             return .patch
         }
     }
@@ -48,6 +51,8 @@ public enum WallabagEntryEndpoint: WallabagKitEndpoint {
             return "/api/entries/\(entryId)/tags/\(tagId)"
         case let .update(id, _):
             return "/api/entries/\(id).json"
+        case let .reload(id):
+            return "/api/entries/\(id)/reload"
         }
     }
 
